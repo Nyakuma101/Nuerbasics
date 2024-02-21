@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignIn from "./Components/SignIn/SignIn";
+import AlphaButtons from "./Components/AlphaButtons";
+import Categories from "./Components/Categories/Categories";
+import Numbers from "./Components/Numbers/Numbers";
+import Anatomy from "./Components/Anatomy/Anatomy";
+import Plants from "./Components/Plants/Plants";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/AlphaButtons" element={<AlphaButtons />} />
+        <Route path="/Categories" element={<Categories />} />
+        <Route path="/Categories/:Numbers" element={<Numbers />} />
+        <Route path="/Categories/:Animals" element={<Animals />} />
+        <Route path="/Categories/:Anatomy" element={<Anatomy />} />
+        <Route path="/Categories/:Plants" element={<Plants />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

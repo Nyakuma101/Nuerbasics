@@ -118,4 +118,5 @@ Sprint #2
 - It would be great to have the ability to choose the tribe you are coming from such as Dinka, Acholi,Shilluk, Luo,Azande,Didinga and much more. This would allow the app to be used by all South Sudanes tribes and truly become inclusive in all language for the region.
 - Advance phrases that could be stringed together separated into books each one more advanced then the other.
   The app could have links to websites for cultural education and maybe events in the community in the country you are from.
+
 # Thok-Naath-
