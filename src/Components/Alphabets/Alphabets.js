@@ -7,7 +7,7 @@ export default function Alphabets() {
   return (
     <div className="alphabets">
       <div className="alphabets__box">
-        <p className="alphabets__title">Thok Naath Alphabet</p>
+        <p className="alphabets__title">THOK NAATH ALPHABET</p>
       </div>
       <div className="alphabets__letters">
         <div className="alphabets__group">
