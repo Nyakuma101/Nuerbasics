@@ -1,8 +1,58 @@
+@use "../../Styles/Partials/mixins" as *;
+@use "../../Styles/Partials/typography" as *;
+@use "../../Styles/Partials/variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
+}
 .home {
-  background-color: rgb(251, 235, 216);
+  background-color: rgb(244, 239, 234);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   &__facts {
-    height: 50px;
-    width: 50px;
-    background-color: #555;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 19rem;
+    height: 20rem;
+    background-color: #9bc9b7;
+    border-radius: 2rem;
+    border: 1.5px solid #ca8935;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    font-size: 1.5rem;
+  }
+  &__fun {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__content {
+    margin: 0;
+    padding-top: 3rem;
+    border-radius: 1.5rem;
+    border: 1.5px solid #ca89352b;
+    height: 13rem;
+    width: 18rem;
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+    font-size: 1rem;
+  }
+  &__account {
+    margin-top: 10rem;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    font-size: 1rem;
   }
 }
