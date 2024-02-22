@@ -17,8 +17,11 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 100vh;
+  justify-content: space-between;
+  color: #333333;
   &__facts {
-    margin-top: 3rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,9 +30,8 @@ body {
     background-color: #9bc9b7;
     border-radius: 2rem;
     border: 1.5px solid #ca8935;
-    font-weight: 300;
+    font-weight: 600;
     font-style: normal;
-    font-display: swap;
     font-size: 1.5rem;
   }
   &__fun {
@@ -43,9 +45,9 @@ body {
     border: 1.5px solid #ca89352b;
     height: 13rem;
     width: 18rem;
-    font-weight: 100;
+
+    font-weight: 300;
     font-style: italic;
-    font-display: swap;
     font-size: 1rem;
   }
   &__account {

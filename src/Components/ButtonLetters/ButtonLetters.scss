@@ -11,32 +11,24 @@ body {
   margin: 0;
   font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
 }
-button {
+#letters {
   display: flex;
   align-items: center;
-  align-items: center;
   justify-content: center;
-  // outline: none;
-  cursor: pointer;
-  width: 19rem;
-  height: 3.5rem;
 
-  background-image: linear-gradient(
-    to top,
-    #9bc9b7 0%,
-    #9bc9b7 80%,
-    #9bc9b7 100%
-  );
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.2rem;
   border-radius: 0.5rem;
   border: 1.8px solid #ca8935;
   transition: all 0.2s ease;
 
-  font-weight: 600;
+  font-weight: 300;
   font-style: normal;
-  font-display: swap;
   font-size: 1.5rem;
-
   color: #333333;
+  background-image: none;
 
   @include tablet {
     // width: 75%;

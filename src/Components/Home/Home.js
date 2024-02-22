@@ -2,6 +2,15 @@ import Button from "../Button/Button";
 import "./Home.scss";
 
 export default function Home() {
+  // const funFacts = async () => {
+  //   try {
+  //     const displayResponse = await axios.post(
+  //       "http://localhost:1080/videos",)
+  //   } catch (error) {
+  //     console.error("ERROR", error);
+  //   }
+  // };
+  //...........................................................
   return (
     <div className="home">
       <div className="home__facts">
