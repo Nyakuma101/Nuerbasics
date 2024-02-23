@@ -3,8 +3,8 @@ import BCategoriesAnimal from "../BCategoriesAnimal/BCategoriesAnimal";
 import BCategoriesPlant from "../BCategoriesPlant/BCategoriesPlant";
 import ProgressBar10 from "../ProgressBar10/ProgressBar10";
 import { Link } from "react-router-dom";
-import BCategoriesNumbers from "../BCategoriesNumbers/BCategoriesNumbers";
 import BCategoriesAnatomy from "../BCategoriesAnatomy/BCategoriesAnatomy";
+import BCategoriesNumbers1 from "../BCategoriesNumbers1/BCategoriesNumbers1";
 
 export default function Categories() {
   return (
@@ -15,7 +15,7 @@ export default function Categories() {
       </div>
       <div className="categories__category">
         <Link to="/Categories/Numbers">
-          <BCategoriesNumbers text="Numbers" />
+          <BCategoriesNumbers1 text="Numbers" />
         </Link>
 
         <Link to="/Categories/Animals">

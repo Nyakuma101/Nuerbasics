@@ -12,23 +12,14 @@ body {
   font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
 }
 .animal {
-  // background-image: url(../../Assests/icons/picOfAnimall.png);
-  // background-repeat: no-repeat;
-  // background-size: 8rem;
-  // background-position-x: center;
-  // background-color: transparent;
-  // height: 10rem;
-  // width: 10rem;
-  // display: flex;
-
   &__Bcategories {
     display: flex;
     // align-items: center;
     // justify-content: center;
 
     cursor: pointer;
-    width: 7rem;
-    height: 7rem;
+    width: 19rem;
+    height: 8rem;
     margin: 0.5rem;
     border-radius: 0.5rem;
     border: 1.8px solid #ca8935;
@@ -36,15 +27,15 @@ body {
 
     font-weight: 300;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
     align-items: flex-end;
     color: #333333;
 
     background-image: url(../../Assests/icons/cow.jpg);
     background-repeat: no-repeat;
-    background-size: 9rem;
+    background-size: 10rem;
     background-position-x: center;
-    // background-color: transparent;
+    background-color: white;
 
     @include tablet {
       // width: 75%;
