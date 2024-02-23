@@ -2,7 +2,7 @@ Thok Naath (Nuer) - The people's Language
 
 ## Overview
 
-my app will provide individuals with the basic knowledge of the Nuer people language. This will begin with the Alphabet and the will tackle basic categories such as numbers, animals, anatomy and plants.
+This app will provide individuals with the basic knowledge of the Nuer people language. This will begin with the Alphabet and the will tackle basic categories such as numbers, animals, anatomy and plants.
 
 ### Problem
 
@@ -29,7 +29,7 @@ The app will be very user friendly with easy to read text as well as info graphi
 
 ## Implementation
 
-I will be using React and Node.js
+I will be using React
 
 ### Tech Stack
 
@@ -86,9 +86,11 @@ Page #5 -Review
 
 ### Data
 
-Data Base for the slide show
-Data base for the Alphabets
-Data Base for each category (animals, plans, anotomy and numbers)
+Creating my own Data
+
+- slide show
+- Alphabets
+- category (animals, plans, anotomy and numbers)
 
 ### Endpoints
 
@@ -118,5 +120,3 @@ Sprint #2
 - It would be great to have the ability to choose the tribe you are coming from such as Dinka, Acholi,Shilluk, Luo,Azande,Didinga and much more. This would allow the app to be used by all South Sudanes tribes and truly become inclusive in all language for the region.
 - Advance phrases that could be stringed together separated into books each one more advanced then the other.
   The app could have links to websites for cultural education and maybe events in the community in the country you are from.
-
-# Thok-Naath-

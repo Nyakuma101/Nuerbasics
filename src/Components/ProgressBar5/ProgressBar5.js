@@ -7,7 +7,7 @@ export default function ProgressBar5() {
   return (
     <div className="container">
       <label for="five" className="label">
-        <Link to="/SignIn">
+        <Link to="/">
           <img className="label__left" alt="left" src={Left} />
         </Link>
       </label>
