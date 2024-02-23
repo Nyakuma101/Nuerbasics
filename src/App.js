@@ -17,10 +17,10 @@ function App() {
         <Route path="/SignIn" element={<SignIn />} />
         <Route path="/Alphabets" element={<Alphabets />} />
         <Route path="/Categories" element={<Categories />} />
-        <Route path="/Categories/:Numbers" element={<Numbers />} />
-        <Route path="/Categories/:Animals" element={<Animals />} />
-        <Route path="/Categories/:Anatomy" element={<Anatomy />} />
-        <Route path="/Categories/:Plants" element={<Plants />} />
+        <Route path="/Categories/Numbers" element={<Numbers />} />
+        <Route path="/Categories/Animals" element={<Animals />} />
+        <Route path="/Categories/Anatomy" element={<Anatomy />} />
+        <Route path="/Categories/Plants" element={<Plants />} />
       </Routes>
     </BrowserRouter>
   );

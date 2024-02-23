@@ -1,22 +1,34 @@
 import "./Categories.scss";
-import ButtonCategories from "./../ButtonCategories/ButtonCategories";
-import ProgressBar5 from "../ProgressBar5/ProgressBar5";
+import BCategoriesAnimal from "../BCategoriesAnimal/BCategoriesAnimal";
+import BCategoriesPlant from "../BCategoriesPlant/BCategoriesPlant";
+import ProgressBar10 from "../ProgressBar10/ProgressBar10";
+import { Link } from "react-router-dom";
+import BCategoriesNumbers from "../BCategoriesNumbers/BCategoriesNumbers";
+import BCategoriesAnatomy from "../BCategoriesAnatomy/BCategoriesAnatomy";
 
 export default function Categories() {
   return (
     <div className="categories">
-      <ProgressBar5></ProgressBar5>
-
+      <ProgressBar10 />
       <div className="categories__box">
         <p className="categories__title">CATEGORIES</p>
       </div>
       <div className="categories__category">
-        <image className="categories__numbers"></image>
+        <Link to="/Categories/Numbers">
+          <BCategoriesNumbers text="Numbers" />
+        </Link>
 
-        <ButtonCategories text="Numbers"></ButtonCategories>
-        <ButtonCategories text="Animals"></ButtonCategories>
-        <ButtonCategories text="Anatomy"></ButtonCategories>
-        <ButtonCategories text="Plants"></ButtonCategories>
+        <Link to="/Categories/Animals">
+          <BCategoriesAnimal text="Animals" />
+        </Link>
+
+        <Link to="/Categories/Anatomy">
+          <BCategoriesAnatomy text="Anatomy" />
+        </Link>
+
+        <Link to="/Categories/Plants">
+          <BCategoriesPlant text="Plants" />
+        </Link>
       </div>
     </div>
   );

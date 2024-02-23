@@ -2,10 +2,12 @@ import "./Alphabets.scss";
 import { Link } from "react-router-dom";
 import Letters from "../ButtonLetters/ButtonLetters";
 import ButtonYoutube from "../ButtonYoutube/ButtonYoutube";
+import ProgressBar5 from "../ProgressBar5/ProgressBar5";
 
 export default function Alphabets() {
   return (
     <div className="alphabets">
+      <ProgressBar5 />
       <div className="alphabets__box">
         <p className="alphabets__title">THOK NAATH ALPHABET</p>
       </div>
