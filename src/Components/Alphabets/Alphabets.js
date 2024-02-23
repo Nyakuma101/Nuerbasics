@@ -9,8 +9,10 @@ export default function Alphabets() {
     <div className="alphabets">
       <ProgressBar5 />
       <div className="alphabets__box">
-        <p className="alphabets__title">THOK NAATH ALPHABET</p>
+        <p className="alphabets__title">THOK NAATH </p>
+        <p className="alphabets__title"> ALPHABET</p>
       </div>
+
       <div className="alphabets__letters">
         <div className="alphabets__group">
           <Letters text="a"></Letters>
@@ -133,11 +135,14 @@ export default function Alphabets() {
           <Letters text="ö"></Letters>
           <p className="alphabets__phonetic">[ouw]</p>
         </div>
+        <div className="alphabets__group">
+          <Letters text="--"></Letters>
+          <p className="alphabets__phonetic">[--]</p>
+        </div>
       </div>
       <div className="alphabets__youtube">
-        <p>Want To Learn Pronunciation? Please click </p>
         <Link to="https://youtu.be/o5mhbANGcaA">
-          <ButtonYoutube text="Here"></ButtonYoutube>
+          <ButtonYoutube text={"Pronunciation? Click Here"} />
         </Link>
       </div>
     </div>

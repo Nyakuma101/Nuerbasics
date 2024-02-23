@@ -12,52 +12,45 @@ body {
   font-family: "Titillium Web", Tahoma, sans-serif;
 }
 .alphabets {
-  // background-color: rgb(44, 44, 44);
   background-color: rgb(244, 239, 234);
   color: #333333;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   height: 100vh;
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
+  width: 100%;
 
-  &__title {
-    margin: 0;
-  }
   &__box {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
+  &__title {
+    margin: 0;
+    width: 19rem;
+    margin-bottom: 0.9rem;
+  }
+
   &__letters {
+    margin-bottom: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     width: 19rem;
   }
   &__phonetic {
     margin: 0;
+    padding: 0.5rem 0 0.5rem 0;
   }
   &__youtube {
-    background-image: url(../../Assests/icons/youtube.png);
-    background-repeat: no-repeat;
-    // background-position-x: 0.5rem;
-    // background-position-y: 0.5rem;
-    // margin-bottom: 1rem;
-    // padding-left: 2rem;
-    width: 2rem;
-    height: 2rem;
-
-    font-weight: 100;
-    font-style: normal;
-    font-size: 1rem;
-
-    width: 19rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.9rem;
   }
 }

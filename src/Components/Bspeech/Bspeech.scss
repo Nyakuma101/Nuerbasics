@@ -1,0 +1,52 @@
+@use "../../Styles/Partials/mixins" as *;
+@use "../../Styles/Partials/typography" as *;
+@use "../../Styles/Partials/variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
+}
+.speech {
+  &__microphone {
+    display: flex;
+    cursor: pointer;
+    width: 19rem;
+    height: 4rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: 1.8px solid #ca8935;
+    transition: all 0.2s ease;
+
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+    align-items: flex-end;
+    color: #333333;
+
+    background-image: url(../../Assests/icons/numbers2.jpg);
+    background-repeat: no-repeat;
+    background-size: 6.5rem;
+    background-position-x: center;
+    // background-color: white;
+    background: transparent;
+
+    @include tablet {
+      // width: 75%;
+      // align-content: end;
+      // margin-left: 1rem;
+    }
+    @include desktop {
+      margin-left: 2rem;
+    }
+  }
+}
+
+button:focus {
+  border: 1.8px solid #699e89;
+  background-color: #699e89;
+}

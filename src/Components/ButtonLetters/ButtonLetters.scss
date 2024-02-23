@@ -28,7 +28,7 @@ body {
   font-style: normal;
   font-size: 1.5rem;
   color: #333333;
-  background-image: none;
+  background-color: white;
 
   @include tablet {
     // width: 75%;
@@ -40,5 +40,6 @@ body {
   }
 }
 button:focus {
-  box-shadow: inset 0 0 5px 3px #699e89;
+  border: 1.8px solid #699e89;
+  background-color: #699e89;
 }

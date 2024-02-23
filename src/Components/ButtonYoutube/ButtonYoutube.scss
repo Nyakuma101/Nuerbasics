@@ -18,8 +18,8 @@ body {
   justify-content: center;
 
   cursor: pointer;
-  width: 10rem;
-  height: 3.5rem;
+  width: 19rem;
+  height: 2rem;
 
   background-image: linear-gradient(
     to top,
@@ -36,7 +36,6 @@ body {
   font-style: normal;
   font-display: swap;
   font-size: 1.5rem;
-
   color: #333333;
 
   @include tablet {
