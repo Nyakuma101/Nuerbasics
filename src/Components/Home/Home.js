@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import "./Home.scss";
-import Data from "../../Data/funFacts.json";
 
 export default function Home() {
-  console.log(Data);
+  // console.log(Data);
   // const [facts, setFacts] = useState([]);
 
   // const { factsID } = useParams();
@@ -47,7 +46,6 @@ export default function Home() {
         <Link to="./Alphabets">
           <Button text="Begin"></Button>
         </Link>
-        <div>{records.map((Data) => {})}</div>
       </div>
     </div>
   );
