@@ -17,10 +17,8 @@ body {
   color: #333333;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   text-align: center;
-
   height: 100vh;
   font-weight: 300;
   font-style: normal;
@@ -33,6 +31,7 @@ body {
     font-style: normal;
     font-size: 2rem;
   }
+
   &__title {
     margin: 0;
     width: 19rem;
@@ -54,14 +53,15 @@ body {
     font-style: normal;
     font-size: 1.5rem;
     margin: 0.3rem;
-    margin-right: 0.5rem;
+    // margin-right: 0.5rem;
     display: flex;
+    align-items: end;
   }
 
   &__thokNaathPronunciation {
     font-weight: 300;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #333333;
     margin: 0;
     margin-right: 0.5rem;

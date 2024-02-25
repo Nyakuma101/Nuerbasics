@@ -5,7 +5,7 @@ function BNumbersPictureGreen({ text, src }) {
     <div className="green">
       <div type="submit" className="green__npicture">
         <div className="green__nuer">{text}</div>
-        <img src={src} />
+        <img src={src} style={{ width: "150px", height: "150px" }} />
       </div>
     </div>
   );

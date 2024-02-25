@@ -11,11 +11,12 @@ body {
   margin: 0;
   font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
 }
-.plant {
-  &__Bcategories {
+.list {
+  &__listCategories {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     cursor: pointer;
     width: 19rem;
@@ -28,13 +29,7 @@ body {
     font-weight: 300;
     font-style: normal;
     font-size: 1.5rem;
-    align-items: flex-end;
     color: #333333;
-
-    background-image: url(../../Assests/icons/plant2.jpg);
-    background-repeat: no-repeat;
-    background-size: 6rem;
-    background-position-x: center;
     background-color: white;
 
     @include tablet {
@@ -46,11 +41,4 @@ body {
       margin-left: 2rem;
     }
   }
-}
-
-button:focus {
-  box-shadow: inset 0 0 5px 3px #699e89;
-}
-a:link {
-  text-decoration: none;
 }

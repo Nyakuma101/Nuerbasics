@@ -14,10 +14,11 @@ body {
 .next {
   &__small {
     display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    width: 3rem;
+    width: 4rem;
     height: 2rem;
-    // margin: 1rem;
     border-radius: 0.5rem;
     border: 1.8px solid #699e89;
     transition: all 0.2s ease;
@@ -38,9 +39,4 @@ body {
       margin-left: 2rem;
     }
   }
-}
-
-button:focus {
-  border: 1.8px solid #699e89;
-  // background-color: #699e89;
 }

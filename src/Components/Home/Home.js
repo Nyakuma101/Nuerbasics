@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Button from "../Button/Button";
 import "./Home.scss";
+import BBox from "../BBox/BBox";
 
 export default function Home() {
   // console.log(Data);
@@ -44,7 +44,7 @@ export default function Home() {
       <div className="home__account">
         <p>Already have an account?</p>
         <Link to="./Alphabets">
-          <Button text="Begin"></Button>
+          <BBox text="Begin"></BBox>
         </Link>
       </div>
     </div>
