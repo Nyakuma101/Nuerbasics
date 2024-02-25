@@ -8,3 +8,35 @@
     @content;
   }
 }
+
+@mixin greenSquare {
+  display: flex;
+  cursor: pointer;
+  width: 16rem;
+  height: 4rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 1.8px solid #ca8935;
+  transition: all 0.2s ease;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #333333;
+  background-color: #699e89;
+}
+
+@mixin redSquare {
+  display: flex;
+  cursor: pointer;
+  width: 16rem;
+  height: 4rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 1.8px solid #ca8935;
+  transition: all 0.2s ease;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #333333;
+  background-color: #d83d0d;
+}

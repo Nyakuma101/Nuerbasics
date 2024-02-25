@@ -22,11 +22,6 @@ export default function ProgressBar40() {
       <div className="progress">
         <div className="progress-bar"></div>
       </div>
-      {/* <label for="twenty" className="label">
-        <Link to="/Categories/:Animals">
-          <img className="label__right" alt="right" src={Right} />
-        </Link>
-      </label> */}
     </div>
   );
 }

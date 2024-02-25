@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
 }
-.numpictures {
+.green {
   &__npicture {
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@ body {
     height: 15rem;
     margin: 1rem;
     border-radius: 100%;
-    border: 1.9px solid #ca8935;
+    border: 2px solid #699e89;
     transition: all 0.2s ease;
 
     font-weight: 300;
@@ -32,12 +32,7 @@ body {
 
     color: #333333;
 
-    // background-image: url(../../Assests/icons/numbers2.jpg);
-    // background-repeat: no-repeat;
-    // background-size: 6.5rem;
     background-position-x: center;
-    // background-color: white;
-    // background: transparent;
 
     @include tablet {
       // width: 75%;

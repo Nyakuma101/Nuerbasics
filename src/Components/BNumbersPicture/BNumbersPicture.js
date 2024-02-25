@@ -1,9 +1,10 @@
 import "./BNumbersPicture.scss";
 
-function BNumbersPicture({ src }) {
+function BNumbersPicture({ text, src }) {
   return (
-    <div className="Numpictures">
-      <div type="submit" className="Numpictures__npicture">
+    <div className="numpictures">
+      <div type="submit" className="numpictures__npicture">
+        <div className="numpictures__nuer">{text}</div>
         <img src={src} />
       </div>
     </div>
