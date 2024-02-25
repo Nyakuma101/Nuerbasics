@@ -1,4 +1,6 @@
-import "./Button.scss";
+// import "./Button.scss";
+
+// ....deleted
 
 function Button({ text }) {
   return (

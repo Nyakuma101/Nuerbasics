@@ -13,9 +13,10 @@ import BNumbersPictureGreen from "../BNumbersPictureGreen/BNumbersPictureGreen";
 export default function Anatomy() {
   const [anatomyList, setAnatomyList] = useState([]);
   const [showCorrect, setShowCorrect] = useState(false);
-  const [showWrong, setShowWrong] = useState(false);
+  const [showNext, setShowNext] = useState(false);
 
   const [currentQuestions, setCurrentQuestion] = useState(0);
+  const [error, setError] = useState(false);
 
   // ............................................................
   const getAnatomy = async () => {
@@ -35,14 +36,19 @@ export default function Anatomy() {
   // ............................................................
   const correctAnswer = () => {
     setShowCorrect(true);
+    setError(false);
   };
   const nextQuestion = () => {
     setCurrentQuestion(currentQuestions + 1);
     setShowCorrect(false);
+    setShowNext(false);
   };
-  const inCorrectAnswer = () => {
-    setShowCorrect(false);
+  // Function to handle button click
+  const handleClick = () => {
+    setShowNext(true);
+    setError(true);
   };
+
   // //WRONG = RED
   //.............................................................
 
@@ -110,9 +116,13 @@ export default function Anatomy() {
               </p>
             </p>
           </div>
-          <div className="anatomy__next">
-            <BNext text="NEXT" onClick={nextQuestion} />
-          </div>
+          {!showNext && (
+            <span>
+              <div className="anatomy__next">
+                <BNext text="NEXT" onClick={nextQuestion} />
+              </div>
+            </span>
+          )}
         </section>
         <div className="anatomy__AllBox">
           <BBox
@@ -138,8 +148,6 @@ export default function Anatomy() {
     );
   }
 
-  // ............................................................
-
   // ...........................................................
   return (
     <div className="anatomy">
@@ -157,6 +165,13 @@ export default function Anatomy() {
             </p>
           </p>
         </div>
+        {showNext && (
+          <span>
+            <div className="anatomy__next">
+              <BNext text="NEXT" onClick={nextQuestion} />
+            </div>
+          </span>
+        )}
       </section>
       <div className="anatomy__AllBox">
         <BBox
@@ -166,17 +181,19 @@ export default function Anatomy() {
           onClick={correctAnswer}
         />
         <BBox
-          className="box__squares"
+          className={error ? "box__squares--incorrect" : "box__squares"}
           text={anatomyList[currentQuestions]?.english_one}
-          onClick={inCorrectAnswer}
+          onClick={handleClick}
         />
         <BBox
-          className="box__squares"
+          className={error ? "box__squares--incorrect" : "box__squares"}
           text={anatomyList[currentQuestions]?.english_two}
+          onClick={handleClick}
         />
         <BBox
-          className="box__squares"
+          className={error ? "box__squares--incorrect" : "box__squares"}
           text={anatomyList[currentQuestions]?.english_three}
+          onClick={handleClick}
         />
       </div>
     </div>
