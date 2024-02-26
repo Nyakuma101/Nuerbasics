@@ -40,20 +40,25 @@ body {
   }
   &__content {
     margin: 0;
-    padding-top: 3rem;
-    border-radius: 1.5rem;
-    border: 1.5px solid #ca89352b;
+    padding-top: 1rem;
+    // border-radius: 1.5rem;
+    // border: 1.5px solid #ca89352b;
     height: 13rem;
     width: 18rem;
 
     font-weight: 300;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
   &__account {
     margin-top: 10rem;
     font-weight: 300;
     font-style: normal;
     font-size: 1rem;
+  }
+  &__circles {
+    display: flex;
+    padding-top: 1rem;
   }
 }

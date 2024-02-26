@@ -1,44 +1,56 @@
-import { Link } from "react-router-dom";
 import "./Home.scss";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import { useEffect, useState, useTransition } from "react";
 import BBox from "../BBox/BBox";
+import BHomeCircles from "../BHomCircles/BHomCircles";
 
 export default function Home() {
-  // console.log(Data);
-  // const [facts, setFacts] = useState([]);
+  const [factsList, setFactsList] = useState([]);
+  const [currentFact, setCurrentFact] = useState(0);
 
-  // const { factsID } = useParams();
-  // console.log(factsID);
+  const getAnatomy = async () => {
+    try {
+      const anatomyResponse = await axios.get("http://localhost:5050/Facts");
+      setFactsList(anatomyResponse.data);
+      console.log(anatomyResponse.data);
+    } catch (error) {
+      console.error("this is an error", error);
+    }
+  };
+  //.....................................................
+  useEffect(() => {
+    getAnatomy();
+    // automatically timer 6seconds
+    const intervalId = setInterval(() => {
+      nextQuestion();
+    }, 6000);
 
-  // const fetchProfiles = async () => {
-  //   try {
-  //     const response = await axios.get(`http://localhost:1080/videos`);
-  //     setVideoDetails(response.data);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+    return () => clearInterval(intervalId);
+  }, [currentFact]);
 
-  // useEffect(() => {
-  //   fetchProfiles();
-  // }, []);
-  // const funFacts = async () => {
-  //   try {
-  //     const displayResponse = await axios.post(
-  //       "http://localhost:1080/videos",)
-  //   } catch (error) {
-  //     console.error("ERROR", error);
-  //   }
-  // };
-  //...........................................................
+  //next question and repeat
+  const nextQuestion = () => {
+    if (currentFact < factsList.length - 1) {
+      setCurrentFact(currentFact + 1);
+    } else {
+      setCurrentFact(0);
+    }
+  };
+
+  //  .....................................................
   return (
     <div className="home">
       <div className="home__facts">
-        <p className="home__fun">Fun Facts</p>
-        <p className="home__content">
-          this is were i will place the facts inside. i hope it actually fits
-          omg this should work completley.
-        </p>
-        <section className="home__circles"></section>
+        <p className="home__fun">FUN FACTS</p>
+        <p className="home__content">{factsList[currentFact]?.funFacts}</p>
+
+        <section className="home__circles">
+          <BHomeCircles onClick={nextQuestion} />
+          <BHomeCircles onClick={nextQuestion} />
+          <BHomeCircles onClick={nextQuestion} />
+          <BHomeCircles onClick={nextQuestion} />
+        </section>
       </div>
 
       <div className="home__account">
@@ -46,6 +58,8 @@ export default function Home() {
         <Link to="./Alphabets">
           <BBox text="Begin"></BBox>
         </Link>
+        {/* nned to delete */}
+        <funFacts className="home__content" />
       </div>
     </div>
   );

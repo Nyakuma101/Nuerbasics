@@ -40,3 +40,21 @@
   color: #333333;
   background-color: #d83d0d;
 }
+
+//small circles for the fun facts buttons
+@mixin funFactsCircle {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ca89358c;
+  border-radius: 10rem;
+  border: 1.8px solid #ca8935;
+  margin: 0.5rem;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: #ca8935;
+  }
+  &:focus {
+    background-color: #ca8935;
+  }
+}
