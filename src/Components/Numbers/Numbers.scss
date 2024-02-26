@@ -45,8 +45,17 @@ body {
     align-items: center;
   }
   &__score {
-    width: 16rem;
     display: flex;
     justify-content: end;
+    align-items: center;
+    margin-right: 0.3rem;
+    width: 4rem;
+  }
+  &__tools {
+    width: 16rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 0;
   }
 }

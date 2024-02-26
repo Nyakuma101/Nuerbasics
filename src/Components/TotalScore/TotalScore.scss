@@ -9,22 +9,23 @@
 }
 body {
   margin: 0;
-  font-family: "Titillium Web", Tahoma, sans-serif;
+  font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
 }
 
-.categories {
+.review {
   background-color: rgb(244, 239, 234);
   color: #333333;
   display: flex;
   flex-direction: column;
+
   align-items: center;
   text-align: center;
+
   height: 100vh;
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
   width: 100%;
-  text-decoration: none;
 
   &__box {
     margin-top: 2rem;
@@ -37,11 +38,7 @@ body {
     width: 19rem;
     margin-bottom: 0.9rem;
   }
-  &__category {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 19rem;
+  &__score {
+    @include ScoreDisplay;
   }
 }

@@ -18,50 +18,53 @@ body {
   align-items: center;
   text-align: center;
   height: 100vh;
-  justify-content: space-between;
+
   color: #333333;
   &__facts {
-    margin-top: 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 19rem;
-    height: 20rem;
-    background-color: #9bc9b7;
-    border-radius: 2rem;
-    border: 1.5px solid #ca8935;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.5rem;
+    @include factsButton;
   }
   &__fun {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  &__circles {
+    display: flex;
+    padding-top: 1rem;
+  }
   &__content {
     margin: 0;
     padding-top: 1rem;
-    // border-radius: 1.5rem;
-    // border: 1.5px solid #ca89352b;
     height: 13rem;
     width: 18rem;
-
     font-weight: 300;
     font-style: italic;
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
   &__account {
-    margin-top: 10rem;
     font-weight: 300;
     font-style: normal;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: end;
+    height: 20rem;
   }
-  &__circles {
-    display: flex;
-    padding-top: 1rem;
+  &__already {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  &__begin {
+    text-decoration: none;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+  &__beginButton {
+    @include beginButton;
   }
 }

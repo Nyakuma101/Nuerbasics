@@ -1,148 +1,153 @@
 import "./Alphabets.scss";
 import { Link } from "react-router-dom";
-import Letters from "../ButtonLetters/ButtonLetters";
-import ButtonYoutube from "../ButtonYoutube/ButtonYoutube";
+import ButtonLetters from "../ButtonLetters/ButtonLetters";
+
 import ProgressBar5 from "../ProgressBar5/ProgressBar5";
+import Speaker from "../../Assests/images/speaker.png";
 
 export default function Alphabets() {
   return (
     <div className="alphabets">
       <ProgressBar5 />
+      <div className="numbers__tools">
+        <img className="alphabets__speaker" src={Speaker}></img>
+      </div>
+
       <div className="alphabets__box">
         <p className="alphabets__title">THOK NAATH </p>
-        <p className="alphabets__title"> ALPHABET</p>
+        <p className="alphabets__alpT"> ALPHABET</p>
       </div>
 
       <div className="alphabets__letters">
         <div className="alphabets__group">
-          <Letters text="a"></Letters>
+          <ButtonLetters text="a" />
           <p className="alphabets__phonetic">[a]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="e"></Letters>
+          <ButtonLetters text="e" />
           <p className="alphabets__phonetic">[ea]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="i"></Letters>
+          <ButtonLetters text="i" />
           <p className="alphabets__phonetic">[ee]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="o"></Letters>
+          <ButtonLetters text="o" />
           <p className="alphabets__phonetic">[o]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="u"></Letters>
+          <ButtonLetters text="u" />
           <p className="alphabets__phonetic">[ou]</p>
         </div>
 
         <div className="alphabets__group">
-          <Letters text="w"></Letters>
+          <ButtonLetters text="w" />
           <p className="alphabets__phonetic">[wa]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="y"></Letters>
+          <ButtonLetters text="y" />
           <p className="alphabets__phonetic">[ya]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="b"></Letters>
+          <ButtonLetters text="b" />
           <p className="alphabets__phonetic">[ba]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="p"></Letters>
+          <ButtonLetters text="p" />
           <p className="alphabets__phonetic">[pa]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="m"></Letters>
+          <ButtonLetters text="m" />
           <p className="alphabets__phonetic">[ma]</p>
         </div>
 
         <div className="alphabets__group">
-          <Letters text="n"></Letters>
+          <ButtonLetters text="n" />
           <p className="alphabets__phonetic">[na]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="nh"></Letters>
+          <ButtonLetters text="nh" />
           <p className="alphabets__phonetic">[ya]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="ŋ"></Letters>
+          <ButtonLetters text="ŋ" />
           <p className="alphabets__phonetic">[ŋa]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="ny"></Letters>
+          <ButtonLetters text="ny" />
           <p className="alphabets__phonetic">[nya]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="r"></Letters>
+          <ButtonLetters text="r" />
           <p className="alphabets__phonetic">[ra]</p>
         </div>
 
         <div className="alphabets__group">
-          <Letters text="d"></Letters>
+          <ButtonLetters text="d" />
           <p className="alphabets__phonetic">[da]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="dh"></Letters>
+          <ButtonLetters text="dh" />
           <p className="alphabets__phonetic">[dha]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="t"></Letters>
+          <ButtonLetters text="t" />
           <p className="alphabets__phonetic">[ta]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="th"></Letters>
+          <ButtonLetters text="th" />
           <p className="alphabets__phonetic">[tha]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="l"></Letters>
+          <ButtonLetters text="l" />
           <p className="alphabets__phonetic">[a]</p>
         </div>
 
         <div className="alphabets__group">
-          <Letters text="k"></Letters>
+          <ButtonLetters text="k" />
           <p className="alphabets__phonetic">[la]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="g"></Letters>
+          <ButtonLetters text="g" />
           <p className="alphabets__phonetic">[ka]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="Ɣ"></Letters>
+          <ButtonLetters text="Ɣ" />
           <p className="alphabets__phonetic">[ha]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="c"></Letters>
+          <ButtonLetters text="c" />
           <p className="alphabets__phonetic">[cha]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="j"></Letters>
+          <ButtonLetters text="j" />
           <p className="alphabets__phonetic">[ja]</p>
         </div>
 
         <div className="alphabets__group">
-          <Letters text="ɛ̈"></Letters>
+          <ButtonLetters text="ɛ̈" />
           <p className="alphabets__phonetic">[e]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="ä"></Letters>
+          <ButtonLetters text="ä" />
           <p className="alphabets__phonetic">[aee]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="Ɔ"></Letters>
+          <ButtonLetters text="Ɔ" />
           <p className="alphabets__phonetic">[aw]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="ö"></Letters>
+          <ButtonLetters text="ö" />
           <p className="alphabets__phonetic">[ouw]</p>
         </div>
         <div className="alphabets__group">
-          <Letters text="--"></Letters>
+          <ButtonLetters text="--" />
           <p className="alphabets__phonetic">[--]</p>
         </div>
       </div>
       <div className="alphabets__youtube">
-        <Link to="https://youtu.be/o5mhbANGcaA">
-          <ButtonYoutube text={"Pronunciation? Click Here"} />
+        <Link to="https://youtu.be/o5mhbANGcaA" className="alphabets__link">
+          <p className="alphabets__simpleText">Pronunciation? Click Here </p>
         </Link>
       </div>
     </div>

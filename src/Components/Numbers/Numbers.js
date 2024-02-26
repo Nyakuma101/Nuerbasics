@@ -7,6 +7,7 @@ import BBox from "../BBox/BBox";
 import BNext from "../BNext/BNext";
 import BNumbersPictureGreen from "../BNumbersPictureGreen/BNumbersPictureGreen";
 import { useNavigate } from "react-router-dom";
+import Speaker from "../../Assests/images/speaker.png";
 
 export default function Numbers() {
   const [anatomyList, setAnatomyList] = useState([]);
@@ -40,7 +41,7 @@ export default function Numbers() {
   };
   const nextQuestion = () => {
     if (currentQuestions === anatomyList.length - 1) {
-      navigate("/Categories");
+      navigate("/Categories/TotalScore", { state: { score: score } });
     } else {
       setCurrentQuestion(currentQuestions + 1);
       setShowCorrect(false);
@@ -61,12 +62,14 @@ export default function Numbers() {
     return (
       <div className="anatomy">
         <ProgressBar20 />
+        <div className="numbers__tools">
+          <img className="alphabets__speaker" src={Speaker}></img>
+          <div className="numbers__score">{score}/21</div>
+        </div>
         <div className="anatomy__box">
           <p className="anatomy__title">NUMBERS</p>
         </div>
-        {/* ..score placement */}
-        <div className="numbers__score">{score}/21</div>
-        {/* ... score placement */}
+
         <BNumbersPictureGreen src={anatomyList[currentQuestions]?.image} />
         <section className="anatomy__content">
           <div className="anatomy__communication">
@@ -112,11 +115,13 @@ export default function Numbers() {
   return (
     <div className="numbers">
       <ProgressBar20 />
-
+      <div className="numbers__tools">
+        <img className="alphabets__speaker" src={Speaker}></img>
+        <div className="numbers__score">{score}/21</div>
+      </div>
       <div className="numbers__box">
         <p className="numbers__title">NUMBERS</p>
       </div>
-      <div className="numbers__score">{score}/21</div>
       <BNumbersPicture />
       <section className="anatomy__content">
         <div className="anatomy__communication">

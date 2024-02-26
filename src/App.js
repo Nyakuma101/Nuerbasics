@@ -8,6 +8,7 @@ import Anatomy from "./Components/Anatomy/Anatomy";
 import Plants from "./Components/Plants/Plants";
 import Home from "./Components/Home/Home";
 import Animals from "./Components/Animals/Animals";
+import TotalScore from "./Components/TotalScore/TotalScore";
 
 function App() {
   return (
@@ -18,10 +19,10 @@ function App() {
         <Route path="/Alphabets" element={<Alphabets />} />
         <Route path="/Categories" element={<Categories />} />
         <Route path="/Categories/Numbers" element={<Numbers />} />
-
         <Route path="/Categories/Animals" element={<Animals />} />
         <Route path="/Categories/Anatomy" element={<Anatomy />} />
         <Route path="/Categories/Plants" element={<Plants />} />
+        <Route path="/Categories/TotalScore" element={<TotalScore />} />
       </Routes>
     </BrowserRouter>
   );

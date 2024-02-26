@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
 }
-#letters {
+.letters {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,6 +29,14 @@ body {
   font-size: 1.5rem;
   color: #333333;
   background-color: white;
+  &:hover {
+    border: 1.8px solid #699e89;
+    background-color: #699e89;
+  }
+  &:focus {
+    border: 1.8px solid #699e89;
+    background-color: #699e89;
+  }
 
   @include tablet {
     // width: 75%;
@@ -39,7 +47,3 @@ body {
     margin-left: 2rem;
   }
 }
-// button:focus {
-//   border: 1.8px solid #699e89;
-//   background-color: #699e89;
-// }

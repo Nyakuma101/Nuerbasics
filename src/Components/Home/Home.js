@@ -3,7 +3,6 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { useEffect, useState, useTransition } from "react";
 import BHomeCircles from "../BHomCircles/BHomCircles";
-import BNext from "../BNext/BNext";
 
 export default function Home() {
   const [factsList, setFactsList] = useState([]);
@@ -37,14 +36,12 @@ export default function Home() {
       setCurrentFact(0);
     }
   };
-
   // .....................................................
   return (
     <div className="home">
       <div className="home__facts">
         <p className="home__fun">FUN FACTS</p>
         <p className="home__content">{factsList[currentFact]?.funFacts}</p>
-
         <section className="home__circles">
           <BHomeCircles onClick={nextQuestion} />
           <BHomeCircles onClick={nextQuestion} />
@@ -52,12 +49,10 @@ export default function Home() {
           <BHomeCircles onClick={nextQuestion} />
         </section>
       </div>
-
       <div className="home__account">
-        <p>Already have an account?</p>
-
-        <Link className="home__begin" to="./Alphabets">
-          <BNext text="BEGIN" />
+        <p className="home__already">Already have an account?</p>
+        <Link className="home__link" to="./Alphabets">
+          <p className="home__beginButton">BEGIN</p>
         </Link>
       </div>
     </div>

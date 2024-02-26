@@ -58,3 +58,85 @@
     background-color: #ca8935;
   }
 }
+
+// Alphabet Page Youtube
+@mixin youtubeButton {
+  width: 16rem;
+  margin: 0;
+  color: #333333;
+  background-color: #699e89;
+  border-radius: 0.5rem;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  &:hover {
+    background-color: #ca8935;
+    color: white;
+  }
+}
+// ...............................................
+//HOME MIXINS
+
+//Home Facts Button
+@mixin factsButton {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 19rem;
+  height: 20rem;
+
+  background-color: #699e89;
+  border: 2px solid #ca8935;
+  border-radius: 2rem;
+
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+//Home Page Begin Button
+@mixin beginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19rem;
+  height: 4rem;
+  margin: 0;
+  color: #333333;
+  background-color: #699e89;
+  border: 2px solid #ca8935;
+  border-radius: 0.5rem;
+
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3rem;
+  &:hover {
+    background-color: #ca8935;
+    color: white;
+  }
+}
+// ...............................................
+//CATEGORIES MIXINS
+
+// ...............................................
+//TOTAL SCORE PAGE MIXINS
+
+// Score
+@mixin ScoreDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19rem;
+  height: 4rem;
+  margin: 0;
+  color: #333333;
+  background-color: #ca8935;
+  border-radius: 0.5rem;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+//Page Mixin

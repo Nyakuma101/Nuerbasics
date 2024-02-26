@@ -2,9 +2,9 @@ import "./Categories.scss";
 import ProgressBar10 from "../ProgressBar10/ProgressBar10";
 import { Link } from "react-router-dom";
 import BCategories from "../BCategories/BCategories";
-import Numbers2 from "../../Assests/icons/numbers2.jpg";
-import AnatomyPic from "../../Assests/icons/skeleton.jpg";
-import AnimalsPic from "../../Assests/icons/cow.jpg";
+import Numbers2 from "../../Assests/icons/numbers2.png";
+import AnatomyPic from "../../Assests/icons/skeleton.png";
+import AnimalsPic from "../../Assests/icons/cow.png";
 import PlantsPic from "../../Assests/icons/plant.png";
 
 export default function Categories() {
@@ -16,7 +16,7 @@ export default function Categories() {
       </div>
       <div className="categories__category">
         <Link to="/Categories/Numbers" style={{ textDecoration: "none" }}>
-          <BCategories text="Numbers" src={Numbers2} />
+          <BCategories className="categoi" text="Numbers" src={Numbers2} />
         </Link>
 
         <Link to="/Categories/Animals" style={{ textDecoration: "none" }}>

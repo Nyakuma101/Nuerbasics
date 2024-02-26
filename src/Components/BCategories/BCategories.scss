@@ -31,6 +31,10 @@ body {
     font-size: 1.5rem;
     color: #333333;
     background-color: white;
+    &:hover {
+      background-color: #699e89;
+      color: white;
+    }
 
     @include tablet {
       // width: 75%;

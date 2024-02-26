@@ -6,7 +6,9 @@ import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
 import BBox from "../BBox/BBox";
 import BNext from "../BNext/BNext";
 import BNumbersPictureGreen from "../BNumbersPictureGreen/BNumbersPictureGreen";
-
+import Speaker from "../../Assests/images/speaker.png";
+// ........................................................................
+// ........................................................................
 export default function Animals() {
   const [anatomyList, setAnatomyList] = useState([]);
   const [showCorrect, setShowCorrect] = useState(false);
@@ -51,6 +53,9 @@ export default function Animals() {
     return (
       <div className="anatomy">
         <ProgressBar30 />
+        <div className="numbers__tools">
+          <img className="alphabets__speaker" src={Speaker}></img>
+        </div>
         <div className="anatomy__box">
           <p className="anatomy__title">ANIMALS</p>
         </div>
@@ -99,6 +104,9 @@ export default function Animals() {
   return (
     <div className="numbers">
       <ProgressBar30 />
+      <div className="numbers__tools">
+        <img className="alphabets__speaker" src={Speaker}></img>
+      </div>
       <div className="numbers__box">
         <p className="numbers__title">ANIMALS</p>
       </div>

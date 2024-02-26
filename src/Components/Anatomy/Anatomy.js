@@ -6,6 +6,7 @@ import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
 import BBox from "../BBox/BBox";
 import BNext from "../BNext/BNext";
 import BNumbersPictureGreen from "../BNumbersPictureGreen/BNumbersPictureGreen";
+import Speaker from "../../Assests/images/speaker.png";
 
 export default function Anatomy() {
   const [anatomyList, setAnatomyList] = useState([]);
@@ -55,6 +56,9 @@ export default function Anatomy() {
     return (
       <div className="anatomy">
         <ProgressBar40 />
+        <div className="numbers__tools">
+          <img className="alphabets__speaker" src={Speaker}></img>
+        </div>
         <div className="anatomy__box">
           <p className="anatomy__title">ANATOMY</p>
         </div>
@@ -103,6 +107,9 @@ export default function Anatomy() {
   return (
     <div className="anatomy">
       <ProgressBar40 />
+      <div className="numbers__tools">
+        <img className="alphabets__speaker" src={Speaker}></img>
+      </div>
 
       <div className="anatomy__box">
         <p className="anatomy__title">ANATOMY</p>
