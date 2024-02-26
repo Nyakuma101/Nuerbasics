@@ -16,7 +16,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
     width: 16rem;
     height: 4rem;
@@ -29,7 +28,6 @@ body {
     font-style: normal;
     font-size: 1.5rem;
     color: #333333;
-
     background-color: transparent;
 
     &:hover {
@@ -37,9 +35,6 @@ body {
     }
 
     @include tablet {
-      // width: 75%;
-      // align-content: end;
-      // margin-left: 1rem;
     }
 
     @include desktop {

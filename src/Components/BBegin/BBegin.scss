@@ -1,0 +1,50 @@
+@use "../../Styles/Partials/mixins" as *;
+@use "../../Styles/Partials/typography" as *;
+@use "../../Styles/Partials/variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
+}
+.begin {
+  &__beginButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 1.8px solid #699e89;
+    transition: all 0.2s ease;
+
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+
+    color: white;
+    background-color: #699e89;
+    &:hover {
+      background-color: #ca8935;
+    }
+
+    &:focus {
+      border: 1.8px solid #699e89;
+      background-color: #699e89;
+    }
+
+    @include tablet {
+      // width: 75%;
+      // align-content: end;
+      // margin-left: 1rem;
+    }
+    @include desktop {
+      margin-left: 2rem;
+    }
+  }
+}

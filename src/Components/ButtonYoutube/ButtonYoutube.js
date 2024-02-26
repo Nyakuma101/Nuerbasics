@@ -1,11 +1,11 @@
-import "./ButtonYoutube.scss";
+// import "./ButtonYoutube.scss";
 
 function ButtonYoutube({ text }) {
   return (
     <div>
-      <button type="submit" id="youtube">
+      <div type="submit" className="youtube">
         {text}
-      </button>
+      </div>
     </div>
   );
 }

@@ -6,12 +6,14 @@ import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
 import BBox from "../BBox/BBox";
 import BNext from "../BNext/BNext";
 import BNumbersPictureGreen from "../BNumbersPictureGreen/BNumbersPictureGreen";
+import { useNavigate } from "react-router-dom";
 
 export default function Numbers() {
   const [anatomyList, setAnatomyList] = useState([]);
   const [showCorrect, setShowCorrect] = useState(false);
   const [showNext, setShowNext] = useState(false);
-  // const [showNight, setShowNight] = useState(true);
+  const [score, setScore] = useState(0);
+  const navigate = useNavigate();
 
   const [currentQuestions, setCurrentQuestion] = useState(0);
   const [error, setError] = useState(false);
@@ -34,11 +36,17 @@ export default function Numbers() {
   const correctAnswer = () => {
     setShowCorrect(true);
     setError(false);
+    setScore((prevCount) => prevCount + 1);
   };
   const nextQuestion = () => {
-    setCurrentQuestion(currentQuestions + 1);
-    setShowCorrect(false);
-    setShowNext(false);
+    if (currentQuestions === anatomyList.length - 1) {
+      navigate("/Categories");
+    } else {
+      setCurrentQuestion(currentQuestions + 1);
+      setShowCorrect(false);
+      setShowNext(false);
+      // setCurrentQuestion(0);
+    }
   };
   // Function to handle button click
   const handleClick = () => {
@@ -46,6 +54,7 @@ export default function Numbers() {
     setError(true);
     // setShowNight(true);
   };
+
   // ............................................................
   //RIGHT = GREEN
   if (showCorrect) {
@@ -55,6 +64,9 @@ export default function Numbers() {
         <div className="anatomy__box">
           <p className="anatomy__title">NUMBERS</p>
         </div>
+        {/* ..score placement */}
+        <div className="numbers__score">{score}/21</div>
+        {/* ... score placement */}
         <BNumbersPictureGreen src={anatomyList[currentQuestions]?.image} />
         <section className="anatomy__content">
           <div className="anatomy__communication">
@@ -104,7 +116,7 @@ export default function Numbers() {
       <div className="numbers__box">
         <p className="numbers__title">NUMBERS</p>
       </div>
-
+      <div className="numbers__score">{score}/21</div>
       <BNumbersPicture />
       <section className="anatomy__content">
         <div className="anatomy__communication">

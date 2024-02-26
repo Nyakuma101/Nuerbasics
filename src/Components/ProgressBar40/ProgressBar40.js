@@ -1,6 +1,5 @@
 import "./ProgressBar40.scss";
 import Left from "../../Assests/icons/left.png";
-import Right from "../../Assests/icons/right.png";
 import { Link } from "react-router-dom";
 
 export default function ProgressBar40() {

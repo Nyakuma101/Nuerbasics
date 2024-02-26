@@ -2,8 +2,8 @@ import "./Home.scss";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useEffect, useState, useTransition } from "react";
-import BBox from "../BBox/BBox";
 import BHomeCircles from "../BHomCircles/BHomCircles";
+import BNext from "../BNext/BNext";
 
 export default function Home() {
   const [factsList, setFactsList] = useState([]);
@@ -38,7 +38,7 @@ export default function Home() {
     }
   };
 
-  //  .....................................................
+  // .....................................................
   return (
     <div className="home">
       <div className="home__facts">
@@ -55,11 +55,10 @@ export default function Home() {
 
       <div className="home__account">
         <p>Already have an account?</p>
-        <Link to="./Alphabets">
-          <BBox text="Begin"></BBox>
+
+        <Link className="home__begin" to="./Alphabets">
+          <BNext text="BEGIN" />
         </Link>
-        {/* nned to delete */}
-        <funFacts className="home__content" />
       </div>
     </div>
   );

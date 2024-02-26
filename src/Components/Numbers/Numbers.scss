@@ -44,4 +44,9 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  &__score {
+    width: 16rem;
+    display: flex;
+    justify-content: end;
+  }
 }
