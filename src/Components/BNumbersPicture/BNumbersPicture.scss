@@ -19,25 +19,17 @@ body {
     align-content: center;
 
     cursor: pointer;
-    width: 12rem;
-    height: 12rem;
-    margin: 1rem;
+    width: 15rem;
+    height: 15rem;
+    margin: 0.5rem;
     border-radius: 100%;
     border: 1.9px solid #ca8935;
     transition: all 0.2s ease;
-
     font-weight: 300;
     font-style: normal;
     font-size: 1.5rem;
-
     color: #333333;
-
-    // background-image: url(../../Assests/icons/numbers2.jpg);
-    // background-repeat: no-repeat;
-    // background-size: 6.5rem;
     background-position-x: center;
-    // background-color: white;
-    // background: transparent;
   }
   &__nuer {
     font-weight: 600;

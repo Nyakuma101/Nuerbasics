@@ -1,4 +1,4 @@
-import "./ProgressBar20.scss";
+import "./ProgressBar30.css";
 import Left2 from "../../Assests/icons/left2.png";
 import Right1 from "../../Assests/icons/Right1.png";
 import { Link } from "react-router-dom";

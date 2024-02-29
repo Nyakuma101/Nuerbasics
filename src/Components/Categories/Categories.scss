@@ -17,11 +17,12 @@ body {
   &__title {
     @include Title;
   }
-
+  &__category {
+    margin-bottom: 1rem;
+  }
   &__container {
     @include container;
   }
-
   &__logoContainer {
     @include logoContainer;
   }

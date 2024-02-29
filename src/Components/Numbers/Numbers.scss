@@ -11,50 +11,8 @@ body {
   margin: 0;
   font-family: "Titillium Web", Tahoma, sans-serif;
 }
-
 .numbers {
-  @include PageColor;
-  &__title {
-    @include Title;
-  }
-
-  &__container {
-    @include container;
-  }
-
-  &__logoContainer {
-    @include logoContainer;
-  }
-
-  &__box {
-    margin-top: 2rem;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2rem;
-  }
-  &__title {
-    margin: 0;
-    width: 19rem;
-    margin-bottom: 0.9rem;
-  }
-  &__pictures {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &__score {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin-right: 0.3rem;
-    width: 4rem;
-  }
-  &__tools {
-    width: 16rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    margin: 0;
+  &__allbox {
+    margin-bottom: 1rem;
   }
 }

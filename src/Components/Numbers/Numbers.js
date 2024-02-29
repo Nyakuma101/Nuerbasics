@@ -1,11 +1,12 @@
 import "./Numbers.scss";
-import ProgressBar20 from "../ProgressBar20/ProgressBar20";
+// import ProgressBar20 from "../ProgressBar20/ProgressBar20";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
 import BBox from "../BBox/BBox";
 import BNext from "../BNext/BNext";
 import BNumbersPictureGreen from "../BNumbersPictureGreen/BNumbersPictureGreen";
+
 import { useNavigate } from "react-router-dom";
 import LogoBlack3 from "../../Assests/icons/logoBlack3.png";
 import CategoriesLogo from "../../Assests/icons/CategoriesLogo.png";
@@ -41,6 +42,10 @@ export default function Numbers() {
     setError(false);
     setScore((prevCount) => prevCount + 1);
   };
+  // .........................................
+  // // need to do a scores button fo this
+  // navigate("/Categories/TotalScore", { state: { score: score } });
+  // .......................................
   const nextQuestion = () => {
     if (currentQuestions === anatomyList.length - 1) {
       navigate("/Categories/TotalScore", { state: { score: score } });
@@ -64,28 +69,17 @@ export default function Numbers() {
     return (
       <div className="anatomy">
         <div className="categories__container ">
-          {/* <ProgressBar20 />
-        <div className="numbers__tools">
-          <img className="alphabets__speaker" src={Speaker} alt="Logo"></img>
-          <div className="numbers__score">{score}/21</div>
-        </div>
-        <div className="anatomy__box">
-          <p className="anatomy__title">NUMBERS</p>
-        </div> */}
-
           <div className="home__logoContainer">
             <Link className="home__link1" to="/">
               <img className="home__logo" src={LogoBlack3} alt="Logo"></img>
             </Link>
-            <ProgressBar20 />
+            {/* <ProgressBar20 /> */}
             <Link className="home__link1" to="/categories">
               <img className="home__logo" src={CategoriesLogo} alt="Logo"></img>
             </Link>
           </div>
-
           <div className="alphabets__box">
             <p className="alphabets__title">NUMBERS</p>
-            {/* <p className="alphabets__alpT"> ALPHABET</p> */}
           </div>
 
           <BNumbersPictureGreen src={anatomyList[currentQuestions]?.image} />
@@ -98,13 +92,19 @@ export default function Numbers() {
                 </p>
               </p>
             </div>
-            {!showNext && (
-              <span>
-                <div className="anatomy__next">
-                  <BNext text="NEXT" onClick={nextQuestion} />
-                </div>
-              </span>
-            )}
+            <section className="anatomy__ScoreNext">
+              {!showNext && (
+                <span className="anatomy__next1">
+                  <div className="anatomy__next">
+                    <BNext text="NEXT" onClick={nextQuestion} />
+                  </div>
+                </span>
+              )}
+
+              <div className="numbers__tools">
+                <div className="numbers__score">{score}/21</div>
+              </div>
+            </section>
           </section>
           <div className="anatomy__AllBox">
             <BBox
@@ -132,13 +132,13 @@ export default function Numbers() {
     );
   }
   return (
-    <div className="numbers">
+    <div className="anatomy">
       <div className="categories__container ">
         <div className="home__logoContainer">
           <Link className="home__link1" to="/categories">
             <img className="home__logo" src={LogoBlack3} alt="Logo"></img>
           </Link>
-          <ProgressBar20 />
+          {/* <ProgressBar20 /> */}
           <Link className="home__link1" to="/categories">
             <img className="home__logo" src={CategoriesLogo} alt="Logo"></img>
           </Link>
@@ -158,16 +158,20 @@ export default function Numbers() {
               </p>
             </p>
           </div>
-
-          {showNext && (
-            <span>
-              <div className="anatomy__next">
-                <BNext text="NEXT" onClick={nextQuestion} />
-              </div>
-            </span>
-          )}
+          <section className="anatomy__ScoreNext">
+            {showNext && (
+              <span className="anatomy__next1">
+                <div className="anatomy__next">
+                  <BNext text="NEXT" onClick={nextQuestion} />
+                </div>
+              </span>
+            )}
+            <div className="anatomy__tools">
+              <div className="anatomy__score">{score}/21</div>
+            </div>
+          </section>
         </section>
-        <div className="anatomy__AllBox">
+        <div className="anatomy__allBox">
           <BBox
             className="box__squares"
             /**className="anatomy__individualBox"*/

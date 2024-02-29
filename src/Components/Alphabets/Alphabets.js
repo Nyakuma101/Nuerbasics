@@ -19,8 +19,8 @@ export default function Alphabets() {
           </Link>
         </div>
         <div className="alphabets__box">
-          <p className="alphabets__title">THOK NAATH ALPHABET</p>
-          {/* <p className="alphabets__alpT"> ALPHABET</p> */}
+          <p className="alphabets__title">THOK NAATH </p>
+          <p className="alphabets__title"> ALPHABET</p>
         </div>
 
         <div className="alphabets__letters">
