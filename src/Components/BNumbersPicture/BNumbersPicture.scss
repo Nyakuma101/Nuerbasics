@@ -19,8 +19,8 @@ body {
     align-content: center;
 
     cursor: pointer;
-    width: 15rem;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
     margin: 1rem;
     border-radius: 100%;
     border: 1.9px solid #ca8935;
@@ -38,15 +38,6 @@ body {
     background-position-x: center;
     // background-color: white;
     // background: transparent;
-
-    @include tablet {
-      // width: 75%;
-      // align-content: end;
-      // margin-left: 1rem;
-    }
-    @include desktop {
-      margin-left: 2rem;
-    }
   }
   &__nuer {
     font-weight: 600;

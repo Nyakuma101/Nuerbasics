@@ -4,7 +4,9 @@ Thok Naath (Nuer) - The people's Language
 
 This app will provide individuals with the basic knowledge of the Nuer people language. This will begin with the Alphabet and the will tackle basic categories such as numbers, animals, anatomy and plants.
 
-### Problem
+This app will provide users with the introductory to the Nuer people language called Thok Naath. It will provide the alphabets and quiz users on categories such as Numbers, Animals, Anatomy and Plants. It will also provide users with small facts about the Nuer culture and people.
+
+##### Problem
 
 The app is needed mostly for the Nuer community that are displaced around the world. Many of the children like myself are forgetting their native tong due to being second or even third generation. This is a great way to bridge the gap between English and Thok Naath.
 
@@ -120,3 +122,62 @@ Sprint #2
 - It would be great to have the ability to choose the tribe you are coming from such as Dinka, Acholi,Shilluk, Luo,Azande,Didinga and much more. This would allow the app to be used by all South Sudanes tribes and truly become inclusive in all language for the region.
 - Advance phrases that could be stringed together separated into books each one more advanced then the other.
   The app could have links to websites for cultural education and maybe events in the community in the country you are from.
+
+##### Introduction to Thok Naath:
+
+Provide a section introducingthe Thok Naath language, its history, and significance within the Nuer culture.
+Include an alphabet section where users can learn and practice the Thok Naath alphabet.
+Educational Modules:
+
+##### Educational Modules:
+
+Categorize lessons into sections such as Numbers, Animals, Anatomy, and Plants.
+Each section should include lessons on vocabulary, pronunciation guides, and perhaps images for better understanding.
+Quizzes and Challenges:
+
+##### Quizzes and Challenges:
+
+Implement quizzes to reinforce learning in each category.
+Progressively unlock more difficult levels as users advance, keeping them engaged and motivated.
+Cultural Insights:
+
+##### Cultural Insights:
+
+Provide interesting facts and insights about the Nuer culture and people to enhance users' overall understanding.
+Share stories or anecdotes related to language usage and cultural practices.
+Interactive Features:
+
+##### Interactive Features
+
+Include interactive elements like pronunciation practice, where users can record and compare their pronunciation with native speakers.
+Allow users to ask questions or seek clarification on language nuances.
+Progress Tracking:
+
+##### Progress Tracking:
+
+Incorporate a progress tracking system to help users see their improvement over time.
+Reward users for completing lessons and achieving milestones.
+Community Engagement:
+
+##### Community Engagement:
+
+Include a community forum or chat feature where users can connect, share their progress, and ask questions.
+Encourage users to share their experiences with Thok Naath and the Nuer culture.
+Regular Updates:
+
+##### Regular Updates:
+
+Keep the app dynamic by regularly updating content, adding new lessons, quizzes, and cultural insights.
+User-Friendly Design:
+
+##### User-Friendly Design:
+
+Ensure the app has an intuitive and user-friendly interface, making it accessible for users of all ages.
+Feedback Mechanism:
+
+##### Feedback Mechanism:
+
+Include a feedback system to gather user opinions and suggestions for improvement.
+Before finalizing the app, it would be beneficial to collaborate with native speakers or experts in the Thok Naath language and Nuer culture to ensure accuracy and cultural sensitivity in the content. Additionally, considering accessibility features and multiple learning styles can enhance the overall user experience.
+
+I enjoy learning, designing and solving problems to improve the lives of everyone on the daily.

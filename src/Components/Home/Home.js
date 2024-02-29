@@ -1,9 +1,11 @@
 import "./Home.scss";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { useEffect, useState, useTransition } from "react";
+import { useEffect, useState } from "react";
 import BHomeCircles from "../BHomCircles/BHomCircles";
+import LogoBlack3 from "../../Assests/icons/logoBlack3.png";
 
+// .............................................................
 export default function Home() {
   const [factsList, setFactsList] = useState([]);
   const [currentFact, setCurrentFact] = useState(0);
@@ -39,21 +41,27 @@ export default function Home() {
   // .....................................................
   return (
     <div className="home">
-      <div className="home__facts">
-        <p className="home__fun">FUN FACTS</p>
-        <p className="home__content">{factsList[currentFact]?.funFacts}</p>
-        <section className="home__circles">
-          <BHomeCircles onClick={nextQuestion} />
-          <BHomeCircles onClick={nextQuestion} />
-          <BHomeCircles onClick={nextQuestion} />
-          <BHomeCircles onClick={nextQuestion} />
-        </section>
-      </div>
-      <div className="home__account">
-        <p className="home__already">Already have an account?</p>
-        <Link className="home__link" to="./Alphabets">
-          <p className="home__beginButton">BEGIN</p>
-        </Link>
+      <div className="home__container ">
+        <div className="home__logoContainer">
+          <Link className="home__link1" to="/">
+            <img className="home__logo" src={LogoBlack3} alt="Logo"></img>
+          </Link>
+        </div>
+
+        <div className="home__facts">
+          <p className="home__fun">Thok Naath Fun Facts</p>
+          <p className="home__content">{factsList[currentFact]?.funFacts}</p>
+        </div>
+        <div className="home__account">
+          <div className="home__CArrangement">
+            <BHomeCircles onClick={nextQuestion} />
+            <BHomeCircles onClick={nextQuestion} />
+          </div>
+
+          <Link className="home__link" to="./Alphabets">
+            <p className="home__beginButton">BEGIN</p>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -13,15 +13,8 @@ body {
 }
 .FactsC {
   &__circle {
-    @include funFactsCircle; // display: flex;
-
-    @include tablet {
-      // width: 75%;
-      // align-content: end;
-      // margin-left: 1rem;
-    }
-    @include desktop {
-      margin-left: 2rem;
-    }
+    @include funFactsCircle;
+    @include tablet;
+    @include desktop;
   }
 }

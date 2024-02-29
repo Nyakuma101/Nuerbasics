@@ -12,43 +12,10 @@ body {
   font-family: "Titillium Web", Tahoma, sans-serif;
 }
 .alphabets {
-  background-color: rgb(244, 239, 234);
-  color: #333333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 1.5rem;
-  width: 100%;
+  @include PageColor;
 
-  &__box {
-    margin-top: 1.5rem;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2rem;
-  }
-
-  &__speaker {
-    margin: 0.5rem;
-    width: 1.5rem;
-  }
   &__title {
-    margin: 0;
-    width: 19rem;
-    margin-bottom: 0.9rem;
-  }
-  &__alpT {
-    margin: 0;
-    width: 19rem;
-    margin-bottom: 0.9rem;
-    margin-top: 1.5rem;
-
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.5rem;
+    @include Title;
   }
 
   &__letters {
@@ -57,17 +24,26 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 19rem;
+    width: 17rem;
   }
 
   &__phonetic {
     margin: 0;
     padding: 0.5rem 0 0.5rem 0;
+    color: #333333;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 0.9rem;
+  }
+  &__youtube {
+    margin: 0;
   }
   &__link {
     text-decoration: none;
   }
   &__simpleText {
-    @include youtubeButton;
+    @include beginButton;
+
+    font-size: 1.5rem;
   }
 }

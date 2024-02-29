@@ -1,0 +1,52 @@
+// @use "../../Styles/Partials/mixins" as *;
+// @use "../../Styles/Partials/typography" as *;
+// @use "../../Styles/Partials/variables" as *;
+
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
+// body {
+//   margin: 0;
+//   font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
+// }
+// .home {
+//   @include PageColor {
+//     background-color: white;
+//     height: 100vh;
+//     padding: 1rem;
+//   }
+
+//   &__container1 {
+//     background-color: rgba(244, 239, 234, 0.71);
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     text-align: center;
+//     // height: 100vh;
+//     border: #333333;
+
+//     border: 2px solid rgba(255, 255, 255, 0.452);
+//     border-radius: 0.9rem;
+
+//     // @include container;
+//   }
+
+//   &__logoFrontContainer {
+//     width: 35rem;
+//     // height: 100vh;
+//     border-bottom: 0.2rem solid white;
+//     // background-color: #333333;
+//     display: flex;
+//     align-content: end;
+//     // flex-direction: row;
+//     // flex-direction: column;
+//     align-items: start;
+//     padding-left: 1rem;
+//   }
+//   &__logo1 {
+//     width: 8rem;
+//     padding-right: 1rem;
+//   }
+// }

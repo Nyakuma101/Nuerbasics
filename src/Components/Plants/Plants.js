@@ -1,6 +1,6 @@
 import "./Plants.scss";
 import ProgressBar50 from "../ProgressBar50/ProgressBar50";
-import { useEffect, useState, useTransition } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
 import BBox from "../BBox/BBox";
@@ -53,7 +53,7 @@ export default function Plants() {
       <div className="anatomy">
         <ProgressBar50 />
         <div className="numbers__tools">
-          <img className="alphabets__speaker" src={Speaker}></img>
+          <img className="alphabets__speaker" src={Speaker} alt="Logo"></img>
         </div>
         <div className="anatomy__box">
           <p className="anatomy__title">PLANTS</p>
@@ -104,7 +104,7 @@ export default function Plants() {
     <div className="numbers">
       <ProgressBar50 />
       <div className="numbers__tools">
-        <img className="alphabets__speaker" src={Speaker}></img>
+        <img className="alphabets__speaker" src={Speaker} alt="Logo"></img>
       </div>
       <div className="numbers__box">
         <p className="numbers__title">PLANTS</p>
