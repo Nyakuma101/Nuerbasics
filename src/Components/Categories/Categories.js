@@ -12,12 +12,6 @@ import CategoriesLogo from "../../Assests/icons/CategoriesLogo.png";
 
 export default function Categories() {
   return (
-    // <div className="categories">
-    //   <ProgressBar10 />
-    //   <div className="categories__box">
-    //     <p className="categories__title">CATEGORIES</p>
-    //   </div>
-
     <div className="categories">
       <div className="categories__container ">
         <div className="home__logoContainer">

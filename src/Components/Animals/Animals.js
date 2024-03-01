@@ -1,5 +1,5 @@
 import "./Animals.scss";
-// import ProgressBar30 from "../ProgressBar30/ProgressBar30";
+import ProgressBar30 from "../ProgressBar30/ProgressBar30";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
@@ -42,10 +42,6 @@ export default function Numbers() {
     setError(false);
     setScore((prevCount) => prevCount + 1);
   };
-  // .........................................
-  // // need to do a scores button fo this
-  // navigate("/Categories/TotalScore", { state: { score: score } });
-  // .......................................
   const nextQuestion = () => {
     if (currentQuestions === anatomyList.length - 1) {
       navigate("/Categories/TotalScore", { state: { score: score } });
@@ -73,7 +69,7 @@ export default function Numbers() {
             <Link className="home__link1" to="/">
               <img className="home__logo" src={LogoBlack3} alt="Logo"></img>
             </Link>
-            {/* <ProgressBar30 /> */}
+            <ProgressBar30 />
             <Link className="home__link1" to="/categories">
               <img className="home__logo" src={CategoriesLogo} alt="Logo"></img>
             </Link>
@@ -136,7 +132,7 @@ export default function Numbers() {
           <Link className="home__link1" to="/categories">
             <img className="home__logo" src={LogoBlack3} alt="Logo"></img>
           </Link>
-          {/* <ProgressBar30 /> */}
+          <ProgressBar30 />
           <Link className="home__link1" to="/categories">
             <img className="home__logo" src={CategoriesLogo} alt="Logo"></img>
           </Link>
@@ -145,7 +141,12 @@ export default function Numbers() {
         <div className="alphabets__box">
           <p className="alphabets__title">ANIMALS</p>
         </div>
-        <BNumbersPicture />
+        <BNumbersPicture
+          src={anatomyList[currentQuestions]?.image}
+          className={
+            error ? "numpictures__npicture--incorrect" : "numpictures__npicture"
+          }
+        />
         <section className="anatomy__content">
           <div className="anatomy__communication">
             <p className="anatomy__thokNaath">

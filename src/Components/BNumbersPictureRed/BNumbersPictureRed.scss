@@ -11,51 +11,35 @@ body {
   margin: 0;
   font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
 }
-.numpictures {
-  &__npicture {
+.red {
+  &__nRpicture {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
 
     cursor: pointer;
-    width: 15.5rem;
-    height: 15.5rem;
-    margin: 0.6rem;
+    width: 15rem;
+    height: 15rem;
+    margin: 0.5rem;
     border-radius: 100%;
-    border: 2px solid#ca8935;
+    border: 2px solid #699e89;
     transition: all 0.2s ease;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5rem;
     color: #333333;
     background-position-x: center;
+    &:focus {
+      border: 1.8px solid #be250a;
+      background-color: #be250a;
+    }
 
-    &--incorrect {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: white;
-
-      cursor: pointer;
-      width: 15.5rem;
-      height: 15.5rem;
-      margin: 0.6rem;
-      border-radius: 100%;
-      border: 2px solid#be250a;
-      transition: all 0.2s ease;
-      font-weight: 300;
+    &__nuer {
+      font-weight: 600;
       font-style: normal;
       font-size: 1.5rem;
-      color: #333333;
-      background-position-x: center;
+      margin-bottom: 0.5rem;
     }
-  }
-
-  &__nuer {
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
   }
 }

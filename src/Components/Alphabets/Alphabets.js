@@ -150,6 +150,7 @@ export default function Alphabets() {
             <p className="alphabets__phonetic">[-]</p>
           </div>
         </div>
+
         <div className="alphabets__youtube">
           <Link to="https://youtu.be/o5mhbANGcaA" className="alphabets__link">
             <p className="alphabets__simpleText">Pronunciation </p>

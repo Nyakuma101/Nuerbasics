@@ -1,5 +1,5 @@
 import "./Numbers.scss";
-// import ProgressBar20 from "../ProgressBar20/ProgressBar20";
+import ProgressBar20 from "../ProgressBar20/ProgressBar20";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
@@ -11,10 +11,12 @@ import { useNavigate } from "react-router-dom";
 import LogoBlack3 from "../../Assests/icons/logoBlack3.png";
 import CategoriesLogo from "../../Assests/icons/CategoriesLogo.png";
 import { Link } from "react-router-dom";
+import BNumbersPictureRed from "../BNumbersPictureRed/BNumbersPictureRed";
 
 export default function Numbers() {
   const [anatomyList, setAnatomyList] = useState([]);
   const [showCorrect, setShowCorrect] = useState(false);
+  // const [showInCorrect, setShowInCorrect] = useState(true);
   const [showNext, setShowNext] = useState(false);
   const [score, setScore] = useState(0);
   const navigate = useNavigate();
@@ -42,10 +44,7 @@ export default function Numbers() {
     setError(false);
     setScore((prevCount) => prevCount + 1);
   };
-  // .........................................
-  // // need to do a scores button fo this
-  // navigate("/Categories/TotalScore", { state: { score: score } });
-  // .......................................
+
   const nextQuestion = () => {
     if (currentQuestions === anatomyList.length - 1) {
       navigate("/Categories/TotalScore", { state: { score: score } });
@@ -53,7 +52,6 @@ export default function Numbers() {
       setCurrentQuestion(currentQuestions + 1);
       setShowCorrect(false);
       setShowNext(false);
-      // setCurrentQuestion(0);
     }
   };
   // Function to handle button click
@@ -62,7 +60,6 @@ export default function Numbers() {
     setError(true);
     // setShowNight(true);
   };
-
   // ............................................................
   //RIGHT = GREEN
   if (showCorrect) {
@@ -73,7 +70,7 @@ export default function Numbers() {
             <Link className="home__link1" to="/">
               <img className="home__logo" src={LogoBlack3} alt="Logo"></img>
             </Link>
-            {/* <ProgressBar20 /> */}
+            <ProgressBar20 />
             <Link className="home__link1" to="/categories">
               <img className="home__logo" src={CategoriesLogo} alt="Logo"></img>
             </Link>
@@ -108,8 +105,6 @@ export default function Numbers() {
           </section>
           <div className="anatomy__AllBox">
             <BBox
-              // className="anatomy__greenBox"
-              // src={anatomyList[currentQuestions]?.english_correct}
               text={anatomyList[currentQuestions]?.English_correct}
               className="box__squares box__squares--correct"
               onClick={correctAnswer}
@@ -138,7 +133,7 @@ export default function Numbers() {
           <Link className="home__link1" to="/categories">
             <img className="home__logo" src={LogoBlack3} alt="Logo"></img>
           </Link>
-          {/* <ProgressBar20 /> */}
+          <ProgressBar20 />
           <Link className="home__link1" to="/categories">
             <img className="home__logo" src={CategoriesLogo} alt="Logo"></img>
           </Link>
@@ -148,7 +143,13 @@ export default function Numbers() {
           <p className="alphabets__title">NUMBERS</p>
           {/* <p className="alphabets__alpT"> ALPHABET</p> */}
         </div>
-        <BNumbersPicture />
+
+        <BNumbersPicture
+          src={anatomyList[currentQuestions]?.image}
+          className={
+            error ? "numpictures__npicture--incorrect" : "numpictures__npicture"
+          }
+        />
         <section className="anatomy__content">
           <div className="anatomy__communication">
             <p className="anatomy__thokNaath">
@@ -174,7 +175,6 @@ export default function Numbers() {
         <div className="anatomy__allBox">
           <BBox
             className="box__squares"
-            /**className="anatomy__individualBox"*/
             text={anatomyList[currentQuestions]?.English_correct}
             onClick={correctAnswer}
           />

@@ -25,20 +25,10 @@ export default function TotalScore() {
 
         <div className="review__box">
           <p className="alphabets__title">SCORE</p>
-          <div className="review__score">NUMBERS </div>
+          <div className="review__score">TOTAL </div>
           <div className="review__score"> {score}/21</div>
         </div>
       </div>
     </div>
   );
-}
-
-{
-  /* <div className="review">
-     
-     <div className="review__box">
-       <p className="review__title">SCORE</p>
-     </div>
-     <div className="review__score">Numbers = {score}/21</div>
-   </div> */
 }

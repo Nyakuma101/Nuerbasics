@@ -144,7 +144,12 @@ export default function Numbers() {
         <div className="alphabets__box">
           <p className="alphabets__title">ANATOMY</p>
         </div>
-        <BNumbersPicture />
+        <BNumbersPicture
+          src={anatomyList[currentQuestions]?.image}
+          className={
+            error ? "numpictures__npicture--incorrect" : "numpictures__npicture"
+          }
+        />
         <section className="anatomy__content">
           <div className="anatomy__communication">
             <p className="anatomy__thokNaath">

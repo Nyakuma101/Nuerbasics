@@ -5,7 +5,7 @@ function BNext({ text, onClick, src }) {
     <div className="next">
       <button type="submit" className="next__small" onClick={onClick}>
         {text}
-        <img src={src} />
+        <img src={src} className="next__images" />
       </button>
     </div>
   );
