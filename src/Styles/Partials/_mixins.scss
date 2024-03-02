@@ -13,18 +13,14 @@
 // ............................................................
 @mixin PageColor {
   background-color: rgb(244, 239, 234);
-  // background-color: #333333;
   color: #333333;
   display: flex;
-  // flex-direction: column;
   align-items: center;
   text-align: center;
-  // height: 100vh;
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
   justify-content: center;
-  // width: 100%;
 }
 
 @mixin container {
@@ -33,14 +29,11 @@
   align-items: center;
   text-align: center;
   justify-content: space-between;
-
   height: 100vh;
   border: 0.2rem solid rgba(255, 255, 255, 0.452);
   border-radius: 0.9rem;
   border-style: ridge;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.29);
-  // margin: 5rem auto 5rem auto;
-  // padding: 1rem;
 }
 
 @mixin logoContainer {
@@ -104,7 +97,6 @@
   font-weight: 100;
   font-style: normal;
   font-size: 1.5rem;
-  // margin-top: 2rem;
   &:hover {
     border-top: 0.1rem solid #ca8935;
     background-color: #699e89;
@@ -136,7 +128,6 @@
   height: 4rem;
   margin: 0;
   color: #333333;
-
   font-weight: 600;
   font-style: normal;
   font-size: 1.5rem;

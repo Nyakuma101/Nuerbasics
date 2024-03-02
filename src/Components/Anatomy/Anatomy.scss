@@ -25,7 +25,6 @@ body {
   &__title {
     @include Title;
   }
-
   &__box {
     margin-top: 2rem;
     font-weight: 600;
@@ -52,7 +51,6 @@ body {
     flex-direction: column;
     align-items: start;
   }
-
   &__thokNaathPronunciation {
     font-weight: 300;
     font-style: italic;
@@ -60,7 +58,6 @@ body {
     color: #333333;
     margin: 0;
     margin-right: 0.5rem;
-
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -79,26 +76,6 @@ body {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
-
-  // &__score {
-  //   display: flex;
-  //   justify-content: end;
-  //   align-items: center;
-  //   margin-right: 0.3rem;
-  //   width: 1rem;
-
-  //   font-weight: 300;
-  //   font-style: italic;
-  //   font-size: 1.2rem;
-  // }
-  // &__tools {
-  //   display: flex;
-  //   flex-direction: row;
-  //   margin: 0;
-  //   font-weight: 300;
-  //   font-style: italic;
-  //   font-size: 1.2rem;
-  // }
   &__ScoreNext {
     display: flex;
     flex-direction: column;

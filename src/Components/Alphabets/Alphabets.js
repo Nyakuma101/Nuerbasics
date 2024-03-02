@@ -22,7 +22,6 @@ export default function Alphabets() {
           <p className="alphabets__title">THOK NAATH </p>
           <p className="alphabets__title"> ALPHABET</p>
         </div>
-
         <div className="alphabets__letters">
           <div className="alphabets__group">
             <ButtonLetters text="a" />
@@ -44,7 +43,6 @@ export default function Alphabets() {
             <ButtonLetters text="u" />
             <p className="alphabets__phonetic">[ou]</p>
           </div>
-
           <div className="alphabets__group">
             <ButtonLetters text="w" />
             <p className="alphabets__phonetic">[wa]</p>
@@ -65,7 +63,6 @@ export default function Alphabets() {
             <ButtonLetters text="m" />
             <p className="alphabets__phonetic">[ma]</p>
           </div>
-
           <div className="alphabets__group">
             <ButtonLetters text="n" />
             <p className="alphabets__phonetic">[na]</p>
@@ -150,7 +147,6 @@ export default function Alphabets() {
             <p className="alphabets__phonetic">[-]</p>
           </div>
         </div>
-
         <div className="alphabets__youtube">
           <Link to="https://youtu.be/o5mhbANGcaA" className="alphabets__link">
             <p className="alphabets__simpleText">Pronunciation </p>

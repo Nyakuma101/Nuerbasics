@@ -1,8 +1,6 @@
 import { useLocation } from "react-router-dom";
 import "./TotalScore.scss";
-
 import ProgressBar100 from "../ProgressBar100/ProgressBar100";
-import { useNavigate } from "react-router-dom";
 import LogoBlack3 from "../../Assests/icons/logoBlack3.png";
 import CategoriesLogo from "../../Assests/icons/CategoriesLogo.png";
 import { Link } from "react-router-dom";
@@ -22,7 +20,6 @@ export default function TotalScore() {
             <img className="home__logo" src={CategoriesLogo} alt="Logo"></img>
           </Link>
         </div>
-
         <div className="review__box">
           <p className="alphabets__title">SCORE</p>
           <div className="review__score">TOTAL </div>

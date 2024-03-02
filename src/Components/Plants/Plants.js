@@ -6,7 +6,6 @@ import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
 import BBox from "../BBox/BBox";
 import BNext from "../BNext/BNext";
 import BNumbersPictureGreen from "../BNumbersPictureGreen/BNumbersPictureGreen";
-
 import { useNavigate } from "react-router-dom";
 import LogoBlack3 from "../../Assests/icons/logoBlack3.png";
 import CategoriesLogo from "../../Assests/icons/CategoriesLogo.png";
@@ -18,7 +17,6 @@ export default function Numbers() {
   const [showNext, setShowNext] = useState(false);
   const [score, setScore] = useState(0);
   const navigate = useNavigate();
-
   const [currentQuestions, setCurrentQuestion] = useState(0);
   const [error, setError] = useState(false);
   // ............................................................
@@ -42,10 +40,6 @@ export default function Numbers() {
     setError(false);
     setScore((prevCount) => prevCount + 1);
   };
-  // .........................................
-  // // need to do a scores button fo this
-  // navigate("/Categories/TotalScore", { state: { score: score } });
-  // .......................................
   const nextQuestion = () => {
     if (currentQuestions === anatomyList.length - 1) {
       navigate("/Categories/TotalScore", { state: { score: score } });
@@ -53,14 +47,12 @@ export default function Numbers() {
       setCurrentQuestion(currentQuestions + 1);
       setShowCorrect(false);
       setShowNext(false);
-      // setCurrentQuestion(0);
     }
   };
   // Function to handle button click
   const handleClick = () => {
     setShowNext(true);
     setError(true);
-    // setShowNight(true);
   };
 
   // ............................................................
@@ -78,11 +70,9 @@ export default function Numbers() {
               <img className="home__logo" src={CategoriesLogo} alt="Logo"></img>
             </Link>
           </div>
-
           <div className="alphabets__box">
             <p className="alphabets__title">PLANTS</p>
           </div>
-
           <BNumbersPictureGreen src={anatomyList[currentQuestions]?.image} />
           <section className="anatomy__content">
             <div className="anatomy__communication">
@@ -93,7 +83,6 @@ export default function Numbers() {
                 </p>
               </p>
             </div>
-
             <section className="anatomy__ScoreNext">
               {!showNext && (
                 <span className="anatomy__next1">
@@ -107,7 +96,6 @@ export default function Numbers() {
               </div>
             </section>
           </section>
-
           <div className="anatomy__AllBox">
             <BBox
               text={anatomyList[currentQuestions]?.english_correct}
@@ -143,7 +131,6 @@ export default function Numbers() {
             <img className="home__logo" src={CategoriesLogo} alt="Logo"></img>
           </Link>
         </div>
-
         <div className="alphabets__box">
           <p className="alphabets__title">PLANTS</p>
         </div>
@@ -162,7 +149,6 @@ export default function Numbers() {
               </p>
             </p>
           </div>
-
           <section className="anatomy__ScoreNext">
             {showNext && (
               <span className="anatomy__next1">
@@ -179,7 +165,6 @@ export default function Numbers() {
         <div className="anatomy__allBox">
           <BBox
             className="box__squares"
-            /**className="anatomy__individualBox"*/
             text={anatomyList[currentQuestions]?.english_correct}
             onClick={correctAnswer}
           />
@@ -203,161 +188,3 @@ export default function Numbers() {
     </div>
   );
 }
-
-// import "./Plants.scss";
-// import ProgressBar50 from "../ProgressBar50/ProgressBar50";
-// import { useEffect, useState } from "react";
-// import axios from "axios";
-// import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
-// import BBox from "../BBox/BBox";
-// import BNext from "../BNext/BNext";
-// import BNumbersPictureGreen from "../BNumbersPictureGreen/BNumbersPictureGreen";
-// import Speaker from "../../Assests/images/speaker.png";
-
-// export default function Plants() {
-//   const [anatomyList, setAnatomyList] = useState([]);
-//   const [showCorrect, setShowCorrect] = useState(false);
-//   const [showNext, setShowNext] = useState(false);
-//   // const [showNight, setShowNight] = useState(true);
-
-//   const [currentQuestions, setCurrentQuestion] = useState(0);
-//   const [error, setError] = useState(false);
-//   // ............................................................
-//   const getAnatomy = async () => {
-//     try {
-//       const anatomyResponse = await axios.get("http://localhost:5050/Plants");
-//       setAnatomyList(anatomyResponse.data);
-//       console.log(anatomyResponse.data);
-//     } catch (error) {
-//       console.error("this is an error", error);
-//     }
-//   };
-//   useEffect(() => {
-//     getAnatomy();
-//   }, []);
-
-//   // ............................................................
-//   const correctAnswer = () => {
-//     setShowCorrect(true);
-//     setError(false);
-//   };
-//   const nextQuestion = () => {
-//     setCurrentQuestion(currentQuestions + 1);
-//     setShowCorrect(false);
-//     setShowNext(false);
-//   };
-//   // Function to handle button click
-//   const handleClick = () => {
-//     setShowNext(true);
-//     setError(true);
-//     // setShowNight(true);
-//   };
-//   // ............................................................
-//   //RIGHT = GREEN
-//   if (showCorrect) {
-//     return (
-//       <div className="anatomy">
-//         <ProgressBar50 />
-//         <div className="numbers__tools">
-//           <img className="alphabets__speaker" src={Speaker} alt="Logo"></img>
-//         </div>
-//         <div className="anatomy__box">
-//           <p className="anatomy__title">PLANTS</p>
-//         </div>
-//         <BNumbersPictureGreen src={anatomyList[currentQuestions]?.image} />
-//         <section className="anatomy__content">
-//           <div className="anatomy__communication">
-//             <p className="anatomy__thokNaath">
-//               {anatomyList[currentQuestions]?.thokNaath}
-//               <p className="anatomy__thokNaathPronunciation">
-//                 {anatomyList[currentQuestions]?.thokNaath_pronunciation}
-//               </p>
-//             </p>
-//           </div>
-//           {!showNext && (
-//             <span>
-//               <div className="anatomy__next">
-//                 <BNext text="NEXT" onClick={nextQuestion} />
-//               </div>
-//             </span>
-//           )}
-//         </section>
-//         <div className="anatomy__AllBox">
-//           <BBox
-//             // className="anatomy__greenBox"
-//             // src={anatomyList[currentQuestions]?.english_correct}
-//             text={anatomyList[currentQuestions]?.English_correct}
-//             className="box__squares box__squares--correct"
-//             onClick={correctAnswer}
-//           />
-//           <BBox
-//             className="box__squares "
-//             text={anatomyList[currentQuestions]?.english_one}
-//           />
-//           <BBox
-//             className="box__squares"
-//             text={anatomyList[currentQuestions]?.english_two}
-//           />
-//           <BBox
-//             className="box__squares"
-//             text={anatomyList[currentQuestions]?.english_three}
-//           />
-//         </div>
-//       </div>
-//     );
-//   }
-//   return (
-//     <div className="numbers">
-//       <ProgressBar50 />
-//       <div className="numbers__tools">
-//         <img className="alphabets__speaker" src={Speaker} alt="Logo"></img>
-//       </div>
-//       <div className="numbers__box">
-//         <p className="numbers__title">PLANTS</p>
-//       </div>
-
-//       <BNumbersPicture />
-//       <section className="anatomy__content">
-//         <div className="anatomy__communication">
-//           <p className="anatomy__thokNaath">
-//             {anatomyList[currentQuestions]?.thokNaath}
-//             <p className="anatomy__thokNaathPronunciation">
-//               {anatomyList[currentQuestions]?.thokNaath_pronunciation}
-//             </p>
-//           </p>
-//         </div>
-
-//         {showNext && (
-//           <span>
-//             <div className="anatomy__next">
-//               <BNext text="NEXT" onClick={nextQuestion} />
-//             </div>
-//           </span>
-//         )}
-//       </section>
-//       <div className="anatomy__AllBox">
-//         <BBox
-//           className="box__squares"
-//           /**className="anatomy__individualBox"*/
-//           text={anatomyList[currentQuestions]?.english_correct}
-//           onClick={correctAnswer}
-//         />
-//         <BBox
-//           className={error ? "box__squares--incorrect" : "box__squares"}
-//           text={anatomyList[currentQuestions]?.english_one}
-//           onClick={handleClick}
-//         />
-//         <BBox
-//           className={error ? "box__squares--incorrect" : "box__squares"}
-//           text={anatomyList[currentQuestions]?.english_two}
-//           onClick={handleClick}
-//         />
-//         <BBox
-//           className={error ? "box__squares--incorrect" : "box__squares"}
-//           text={anatomyList[currentQuestions]?.english_three}
-//           onClick={handleClick}
-//         />
-//       </div>
-//     </div>
-//   );
-// }

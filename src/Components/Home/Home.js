@@ -26,7 +26,6 @@ export default function Home() {
     const intervalId = setInterval(() => {
       nextQuestion();
     }, 6000);
-
     return () => clearInterval(intervalId);
   }, [currentFact]);
 
@@ -57,7 +56,6 @@ export default function Home() {
             <BHomeCircles onClick={nextQuestion} />
             <BHomeCircles onClick={nextQuestion} />
           </div>
-
           <Link className="home__link" to="./Alphabets">
             <p className="home__beginButton">BEGIN</p>
           </Link>

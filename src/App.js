@@ -1,6 +1,5 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Alphabets from "./Components/Alphabets/Alphabets";
 import Categories from "./Components/Categories/Categories";
 import Numbers from "./Components/Numbers/Numbers";
@@ -15,7 +14,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/Alphabets" element={<Alphabets />} />
         <Route path="/Categories" element={<Categories />} />
         <Route path="/Categories/Numbers" element={<Numbers />} />

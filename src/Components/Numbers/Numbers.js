@@ -6,17 +6,14 @@ import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
 import BBox from "../BBox/BBox";
 import BNext from "../BNext/BNext";
 import BNumbersPictureGreen from "../BNumbersPictureGreen/BNumbersPictureGreen";
-
 import { useNavigate } from "react-router-dom";
 import LogoBlack3 from "../../Assests/icons/logoBlack3.png";
 import CategoriesLogo from "../../Assests/icons/CategoriesLogo.png";
 import { Link } from "react-router-dom";
-import BNumbersPictureRed from "../BNumbersPictureRed/BNumbersPictureRed";
 
 export default function Numbers() {
   const [anatomyList, setAnatomyList] = useState([]);
   const [showCorrect, setShowCorrect] = useState(false);
-  // const [showInCorrect, setShowInCorrect] = useState(true);
   const [showNext, setShowNext] = useState(false);
   const [score, setScore] = useState(0);
   const navigate = useNavigate();
@@ -44,7 +41,6 @@ export default function Numbers() {
     setError(false);
     setScore((prevCount) => prevCount + 1);
   };
-
   const nextQuestion = () => {
     if (currentQuestions === anatomyList.length - 1) {
       navigate("/Categories/TotalScore", { state: { score: score } });
@@ -58,7 +54,6 @@ export default function Numbers() {
   const handleClick = () => {
     setShowNext(true);
     setError(true);
-    // setShowNight(true);
   };
   // ............................................................
   //RIGHT = GREEN
@@ -97,7 +92,6 @@ export default function Numbers() {
                   </div>
                 </span>
               )}
-
               <div className="numbers__tools">
                 <div className="numbers__score">{score}/21</div>
               </div>
@@ -141,9 +135,7 @@ export default function Numbers() {
 
         <div className="alphabets__box">
           <p className="alphabets__title">NUMBERS</p>
-          {/* <p className="alphabets__alpT"> ALPHABET</p> */}
         </div>
-
         <BNumbersPicture
           src={anatomyList[currentQuestions]?.image}
           className={

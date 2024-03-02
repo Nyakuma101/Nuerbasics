@@ -6,7 +6,6 @@ import BNumbersPicture from "../BNumbersPicture/BNumbersPicture";
 import BBox from "../BBox/BBox";
 import BNext from "../BNext/BNext";
 import BNumbersPictureGreen from "../BNumbersPictureGreen/BNumbersPictureGreen";
-
 import { useNavigate } from "react-router-dom";
 import LogoBlack3 from "../../Assests/icons/logoBlack3.png";
 import CategoriesLogo from "../../Assests/icons/CategoriesLogo.png";
@@ -18,7 +17,6 @@ export default function Numbers() {
   const [showNext, setShowNext] = useState(false);
   const [score, setScore] = useState(0);
   const navigate = useNavigate();
-
   const [currentQuestions, setCurrentQuestion] = useState(0);
   const [error, setError] = useState(false);
   // ............................................................
@@ -42,10 +40,6 @@ export default function Numbers() {
     setError(false);
     setScore((prevCount) => prevCount + 1);
   };
-  // .........................................
-  // // need to do a scores button fo this
-  // navigate("/Categories/TotalScore", { state: { score: score } });
-  // .......................................
   const nextQuestion = () => {
     if (currentQuestions === anatomyList.length - 1) {
       navigate("/Categories/TotalScore", { state: { score: score } });
@@ -53,16 +47,12 @@ export default function Numbers() {
       setCurrentQuestion(currentQuestions + 1);
       setShowCorrect(false);
       setShowNext(false);
-      // setCurrentQuestion(0);
     }
   };
-  // Function to handle button click
   const handleClick = () => {
     setShowNext(true);
     setError(true);
-    // setShowNight(true);
   };
-
   // ............................................................
   //RIGHT = GREEN
   if (showCorrect) {
@@ -91,7 +81,6 @@ export default function Numbers() {
                 </p>
               </p>
             </div>
-
             <section className="anatomy__ScoreNext">
               {!showNext && (
                 <span className="anatomy__next1">
@@ -105,7 +94,6 @@ export default function Numbers() {
               </div>
             </section>
           </section>
-
           <div className="anatomy__AllBox">
             <BBox
               text={anatomyList[currentQuestions]?.english_correct}
@@ -175,7 +163,6 @@ export default function Numbers() {
         <div className="anatomy__allBox">
           <BBox
             className="box__squares"
-            /**className="anatomy__individualBox"*/
             text={anatomyList[currentQuestions]?.english_correct}
             onClick={correctAnswer}
           />
