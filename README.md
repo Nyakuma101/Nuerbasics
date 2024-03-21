@@ -1,8 +1,6 @@
-Thok Naath (Nuer) - The people's Language
+RAUCH Thok Naath (Nuer) - The people's Language
 
 ## Overview
-
-This app will provide individuals with the basic knowledge of the Nuer people language. This will begin with the Alphabet and the will tackle basic categories such as numbers, animals, anatomy and plants.
 
 This app will provide users with the introductory to the Nuer people language called Thok Naath. It will provide the alphabets and quiz users on categories such as Numbers, Animals, Anatomy and Plants. It will also provide users with small facts about the Nuer culture and people.
 
@@ -13,7 +11,6 @@ The app is needed mostly for the Nuer community that are displaced around the wo
 ### User Profile
 
 Anyone can use my app all they need to do is create an account or connect there google, facebook or microsoft account to log in.
-
 The app will be very user friendly with easy to read text as well as info graphics to help the users understand what they are reading.
 
 ### Features
@@ -29,13 +26,20 @@ The app will be very user friendly with easy to read text as well as info graphi
 - review of all the answers correct or otherwise.
 - back function for users
 
+### Mockups
+
+![alt text](<Page 1. Facts-2.png>)![alt text](<Page 2. Alphabet-1.png>)
+![alt text](<Page 3. Categories-1.png>)![alt text](<Page 4. Default Correct-1.png>)
+![alt text](<Page 5. Default Incorrect-2.png>)![alt text](<Page 6. Default Setting for All Quiz-1.png>)
+![alt text](<Page 7. Score For Each Section-1.png>)
+
 ## Implementation
 
 I will be using React
 
 ### Tech Stack
 
--
+- React, Express.Js
 
 ### APIs
 
@@ -79,47 +83,18 @@ Page #5 -Review
 
 - users will have the chance to look at all there answers whether it is correct or not. They will get the change to see their scores and rewarded with stars and a cute image.
 
-### Mockups
-
-![alt text](image-1.png)![alt text](image-2.png)
-![alt text](image-8.png)![alt text](image-4.png)
-![alt text](image-9.png)![alt text](image-10.png)
-![alt text](image-7.png)
-
 ### Data
 
-Creating my own Data
+Creating Jason files for each categories
 
 - slide show
 - Alphabets
 - category (animals, plans, anotomy and numbers)
 
-### Endpoints
-
-TBD
-
-### Auth
-
-Users will have the need to create an account and the information will be stored.
-
-## Roadmap
-
-Spring #1
-
-- create the server with all the data bases
-
-Sprint #2
-
-- In the client side - create reusable components
-- get request
-- basic structure of the app including all the links that are required
-- set up fonts
-- set up drop down menu with link
-
 ## Nice-to-haves
 
 - It would be great to have word to speech especially the alphabets since the language is so tonal.
-- It would be great to have the ability to choose the tribe you are coming from such as Dinka, Acholi,Shilluk, Luo,Azande,Didinga and much more. This would allow the app to be used by all South Sudanes tribes and truly become inclusive in all language for the region.
+- It would be great to have the ability to choose the tribe you are coming from such as Dinka, Acholi,Shilluk, Luo,Azande,Didinga and much more. This would allow the app to be used by all South Sudan's tribes and truly become inclusive in all language for the region.
 - Advance phrases that could be stringed together separated into books each one more advanced then the other.
   The app could have links to websites for cultural education and maybe events in the community in the country you are from.
 
